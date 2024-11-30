@@ -282,16 +282,17 @@ El documento está organizado en las siguientes secciones:
 
 
 
-[4.	ATRIBUTOS DE CALIDAD DEL SOFTWARE](#_Toc52661349)
+### 4. ATRIBUTOS DE CALIDAD DEL SOFTWARE
 
-Escenario de Funcionalidad	
+| **Escenario**              | **Descripción**                                                                                                                                           | **Prioridad** |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| **Escenario de Funcionalidad** | El sistema debe permitir la ejecución de pruebas de carga para garantizar su estabilidad ante picos de demanda.                                           | Alta          |
+| **Escenario de Usabilidad**    | La plataforma debe ser intuitiva y accesible desde navegadores modernos, permitiendo una navegación fluida para usuarios administrativos y estudiantes.   | Alta          |
+| **Escenario de Confiabilidad** | Debe garantizar un tiempo de inactividad inferior al 1%, asegurando disponibilidad continua mediante redundancia y recuperación automática.              | Alta          |
+| **Escenario de Rendimiento**   | El sistema debe ser capaz de manejar un alto número de conexiones concurrentes sin comprometer el tiempo de respuesta, incluso en momentos críticos.      | Alta          |
+| **Escenario de Mantenibilidad**| La infraestructura debe permitir actualizaciones y ajustes en caliente, minimizando las interrupciones durante los eventos.                              | Alta          |
+| **Otros Escenarios**           | Debe integrarse con los sistemas existentes de la universidad, garantizando la seguridad y el manejo eficiente de datos sensibles de los estudiantes.   | Media         |
 
-Escenario de Usabilidad	
-
-Escenario de confiabilidad	
-
-Escenario de rendimiento	
-
-Escenario de mantenibilidad	
-
-Otros Escenarios
+**Notas:**
+1. Los atributos priorizados permiten centrar los esfuerzos en los aspectos críticos del sistema.
+2. Cada escenario contribuye al éxito del evento y la satisfacción del usuario final.
