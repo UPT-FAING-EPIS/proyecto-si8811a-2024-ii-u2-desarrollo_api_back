@@ -276,7 +276,10 @@ El documento está organizado en las siguientes secciones:
 
 3.5.	Vista de Despliegue (vista física)	
 
-3.5.1.	Diagrama de despliegue	
+### 3.5.1. Diagrama de Despliegue
+
+![Diagrama de Despliegue](media/infra_diagram.png)
+
 
 
 [4.	ATRIBUTOS DE CALIDAD DEL SOFTWARE](#_Toc52661349)
