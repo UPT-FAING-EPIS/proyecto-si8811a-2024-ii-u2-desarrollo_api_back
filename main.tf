@@ -29,11 +29,11 @@ provider "mongodbatlas" {
 # }
 
 # Proveedor para recursos dentro del stack de Grafana
-provider "grafana" {
-  alias = "stack"
-  url   = var.grafana_url
-  auth  = var.grafana_auth
-}
+#provider "grafana" {
+#  alias = "stack"
+#  url   = var.grafana_url
+#  auth  = var.grafana_auth
+#}
 
 
 # module "mongodb" {
