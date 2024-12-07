@@ -291,10 +291,10 @@ Soledad Noemi Maltrin Yañez (2011040531)
    
    |Material|Cantidad|Costo Unitario (S/)|
    | :-: | :- | :- |
-   |LAPTOP INTEL CORE I7 3.4 GHZ MONITOR 27'' RAM 16GB DISCO DURO 1TB + SSD 480GB|1|2900.00||
+   |LAPTOP INTEL CORE I7 3.4 GHZ MONITOR 27'' RAM 16GB DISCO DURO 1TB + SSD 480GB|1|2965.59||
    |Toshiba Canvio Basics HDTB520XK3AA - Disco duro externo portátil (2 TB), color negro|1|262.00||
    |Cooler Laptop|1|60||
-   |Total||3,222.00|
+   |Total||3,287.59|
 
 
       4.2.2. Costos operativos durante el desarrollo 
