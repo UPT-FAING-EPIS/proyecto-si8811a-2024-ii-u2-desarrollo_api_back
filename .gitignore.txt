@@ -1,0 +1,21 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraformrc
+terraform.rc
+*.tfvars
+*.tfvars.json
+terraform.tfvars.template
+
+
+# Go
+*.exe
+*.test
+*.out
+go.sum
+
+# IDE
+.idea/
+.vscode/
