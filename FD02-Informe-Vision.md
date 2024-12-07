@@ -26,6 +26,10 @@ Huallpa Maron, Jesus Antonio (2021071085)
 Helbert Andres Condori Loayza (2020067571)
 
 
+
+Soledad Noemi Maltrin Yañez (2011040531)
+
+
 **Tacna – Perú**
 
 2024
