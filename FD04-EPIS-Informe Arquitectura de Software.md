@@ -260,9 +260,14 @@ El documento está organizado en las siguientes secciones:
 
 3.2.	Vista Lógica	
 
-3.2.1.	Diagrama de Subsistemas (paquetes)	
+3.2.1.	Diagrama de Subsistemas (paquetes)
+
+![Diagrama de caso de uso](media/diagrama_subsistemas.png)
+
 
 3.2.2.	Diagrama de Secuencia (vista de diseño)	
+
+![Diagrama de caso de uso](media/diagrama_subsistemas.png)
 
 3.2.3.	Diagrama de Colaboración (vista de diseño)	
 
