@@ -284,6 +284,7 @@ El documento está organizado en las siguientes secciones:
 3.2.6.	Diagrama de Base de datos (relacional o no relacional)	
 
 ![Diagrama de Base](media/basededatos.png)
+![Diagrama de Base](media/basededatos1.png)
 
 3.3.	Vista de Implementación (vista de desarrollo)	
 
