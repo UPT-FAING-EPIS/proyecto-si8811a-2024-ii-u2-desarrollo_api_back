@@ -30,7 +30,13 @@ jobs:
         with:
           terraform_version: '1.5.0'
 
-      - name: Download Go modules
+      - name: Create test directory
+        run: mkdir -p test
+
+      - name: Copy test files
+        run: cp Test/* test/
+
+      - name: Initialize Go modules
         working-directory: ./test
         run: |
           go mod init terraform-test
