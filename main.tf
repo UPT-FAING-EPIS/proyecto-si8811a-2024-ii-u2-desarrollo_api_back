@@ -4,14 +4,7 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 4.0"
     }
-    mongodbatlas = {
-      source  = "mongodb/mongodbatlas"
-      version = "~> 1.10.0"
-    }
-    grafana = {
-      source  = "grafana/grafana"
-      version = "~> 1.28.0"
-    }
+
   }
 }
 
