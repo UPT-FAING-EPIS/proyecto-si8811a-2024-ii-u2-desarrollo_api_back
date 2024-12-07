@@ -257,6 +257,8 @@ El documento está organizado en las siguientes secciones:
 
 3.1.1.	Diagramas de Casos de uso	
 
+![Diagrama de caso de uso](media/diagrama_caso_uso.png)
+
 3.2.	Vista Lógica	
 
 3.2.1.	Diagrama de Subsistemas (paquetes)	
