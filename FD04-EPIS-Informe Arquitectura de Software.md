@@ -26,6 +26,8 @@ Integrantes:
 
 ***Helbert Andres Condori Loayza (2020067571)***
 
+***Soledad Noemi Maltrin Yañez (2011040531)***
+
 
 **Tacna – Perú**
 
