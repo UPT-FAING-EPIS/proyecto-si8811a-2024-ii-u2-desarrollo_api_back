@@ -24,6 +24,9 @@ Integrantes:
 
 ***Huallpa Maron, Jesús Antonio (2021071085)***
 
+***Helbert Andres Condori Loayza (2020067571)***
+
+
 **Tacna – Perú**
 
 ***2024***
