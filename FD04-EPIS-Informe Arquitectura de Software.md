@@ -297,17 +297,11 @@ El documento está organizado en las siguientes secciones:
 
 ![Diagrama de Base](media/arquitectura.png)
 
-3.3.2.	Diagrama de arquitectura del sistema (Diagrama de componentes)	
-
-3.4.	Vista de procesos	
-
-3.4.1.	Diagrama de Procesos del sistema (diagrama de actividad)	
-
-3.5.	Vista de Despliegue (vista física)	
-
-### 3.5.1. Diagrama de Despliegue
+3.3.2.	Diagrama de arquitectura del sistema (Diagrama de componentes)	}
 
 ![Diagrama de Despliegue](media/infra_diagram.png)
+
+
 
 
 
