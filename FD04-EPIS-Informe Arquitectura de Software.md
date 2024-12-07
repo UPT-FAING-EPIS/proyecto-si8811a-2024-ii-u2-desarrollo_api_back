@@ -102,7 +102,9 @@ Integrantes:
 
 3.1.	Vista de Caso de uso	
 
-3.1.1.	Diagramas de Casos de uso	
+3.1.1.	Diagramas de Casos de uso
+
+![caso](./media/diagrama_caso_uso.png)
 
 3.2.	Vista Lógica	
 
