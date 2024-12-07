@@ -31,6 +31,12 @@ func TestDockerHostModule(t *testing.T) {
 			
 			// API Gateway
 			"api_gateway_name": "my-api-gateway",
+
+			// Grafana configurations
+		        "grafana_url": "https://your-grafana-instance.com",
+		        "grafana_auth": "your-grafana-auth-token",
+		        "grafana_cloud_api_key": "test-grafana-key",
+
 			
 			// Other configurations
 			"grafana_cloud_api_key": "test-grafana-key",
