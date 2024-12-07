@@ -267,19 +267,31 @@ El documento está organizado en las siguientes secciones:
 
 3.2.2.	Diagrama de Secuencia (vista de diseño)	
 
-![Diagrama de caso de uso](media/diagrama_subsistemas.png)
+![Diagrama de Secuencia](media/diagrama_secuencia.png)
 
 3.2.3.	Diagrama de Colaboración (vista de diseño)	
 
+![Diagrama de Colaboración](media/diagrama_Colaboración.png)
+
 3.2.4.	Diagrama de Objetos	
+
+![Diagrama de Objetos](media/diagrama_Objetos.png)
 
 3.2.5.	Diagrama de Clases	
 
+![Diagrama de Clases](media/diagrama_clases.png)
+
 3.2.6.	Diagrama de Base de datos (relacional o no relacional)	
+
+![Diagrama de Base](media/basededatos.png)
 
 3.3.	Vista de Implementación (vista de desarrollo)	
 
+![Diagrama de Base](media/Implementación.png)
+
 3.3.1.	Diagrama de arquitectura software (paquetes)	
+
+![Diagrama de Base](media/arquitectura.png)
 
 3.3.2.	Diagrama de arquitectura del sistema (Diagrama de componentes)	
 
