@@ -222,29 +222,32 @@ El documento está organizado en las siguientes secciones:
 
 #### 2.1 Requerimientos Funcionales  
 
-| **ID**   | **Descripción**                                                                                     | **Prioridad** |
-|----------|-----------------------------------------------------------------------------------------------------|---------------|
-| RF-01    | Monitorear el estado de la infraestructura tecnológica (servidores, red, almacenamiento, etc.) en tiempo real. | Alta          |
-| RF-02    | Configurar y desplegar automáticamente los recursos tecnológicos mediante herramientas de automatización (Terraform). | Alta          |
-| RF-03    | Garantizar la disponibilidad y escalabilidad de la infraestructura mediante el uso de servicios en la nube (AWS). | Alta          |
-| RF-04    | Implementar un sistema de almacenamiento seguro y escalable para guardar logs, datos históricos y métricas. | Alta          |
-| RF-05    | Realizar pruebas de carga y rendimiento de la infraestructura para asegurar la capacidad durante el evento. | Alta          |
-| RF-06    | Implementar una red de monitoreo que detecte fallos o problemas en la infraestructura tecnológica y genere alertas. | Alta          |
-| RF-07    | Configurar el sistema de infraestructura para que pueda integrarse con otras plataformas de la universidad, como la gestión de eventos y bases de datos de usuarios. | Media         |
-
+    | **ID**  | **Nombre del Requerimiento**                                           | **Descripción**                                                                                                     | **Prioridad** |
+    |---------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------|
+    | RF-01   | Monitoreo de Infraestructura                                           | Monitorear el estado de la infraestructura tecnológica (servidores, red, almacenamiento, etc.) en tiempo real.    | Alta          |
+    | RF-02   | Despliegue Automático con Terraform                                    | Configurar y desplegar automáticamente los recursos tecnológicos mediante herramientas de automatización (Terraform). | Alta          |
+    | RF-03   | Garantía de Disponibilidad y Escalabilidad en AWS                      | Garantizar la disponibilidad y escalabilidad de la infraestructura mediante el uso de servicios en la nube (AWS). | Alta          |
+    | RF-04   | Pruebas de Carga y Rendimiento                                         | Realizar pruebas de carga y rendimiento de la infraestructura para asegurar la capacidad durante el evento.       | Alta          |
+    | RF-05   | Integración con Plataformas Universitarias                             | Configurar el sistema de infraestructura para que pueda integrarse con otras plataformas de la universidad, como la gestión de eventos y bases de datos de usuarios. | Media         |
+    | RF-06   | Implementación de EC2 con Amazon Linux 2 para Docker                   | Implementación de un EC2 con Amazon Linux 2 para la Ejecución de Contenedores Docker en AWS mediante Terraform.   | Alta          |
+    | RF-07   | Configuración de Instancia de Grafana Cloud                            | Configuración de una Instancia de Grafana Cloud mediante Terraform.                                              | Alta          |
+    | RF-08   | Hospedaje de Aplicación Flutter en S3                                 | Configuración de un Bucket S3 para Hospedar una Aplicación Flutter como Sitio Web Estático.                      | Media         |
+    | RF-09   | Configuración de MongoDB Atlas                                        | Configuración de un Cluster y Usuario de MongoDB Atlas mediante Terraform.                                       | Alta          |
+    | RF-10   | Hospedaje de Aplicación React en S3                                   | Configuración de un Bucket S3 para Hospedar una Aplicación React como Sitio Web Estático.                        | Media         |
+    
 ---
 
 #### 2.2 Requerimientos No Funcionales – Atributos de Calidad  
 
-| **ID**   | **Descripción**                                                                                     | **Prioridad** |
-|----------|-----------------------------------------------------------------------------------------------------|---------------|
-| RNF-01   | El sistema de infraestructura debe ser compatible con sistemas operativos Linux y Windows para la gestión de servidores. | Alta          |
-| RNF-02   | La plataforma debe ser accesible desde cualquier dispositivo con conexión a Internet (navegador web moderno). | Alta          |
-| RNF-03   | La infraestructura debe garantizar la seguridad de los datos mediante protocolos de encriptación y autenticación. | Alta          |
-| RNF-04   | La infraestructura debe ser escalable y permitir el incremento de recursos en caso de aumento de usuarios o demanda durante el evento. | Alta          |
-| RNF-05   | La solución debe ofrecer redundancia y alta disponibilidad para los servicios críticos, con un tiempo de inactividad menor al 1%. | Alta          |
-| RNF-06   | Los servidores y servicios en la nube deben contar con sistemas de respaldo y recuperación ante fallos automáticos. | Alta          |
-| RNF-07   | La infraestructura debe consumir recursos mínimos de CPU y RAM para optimizar el rendimiento de las aplicaciones y servicios del evento. | Media         |
+    | **ID**  | **Nombre del Requerimiento**                                           | **Descripción**                                                                                                     | **Prioridad** |
+    |---------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------|
+    | RNF-01  | Compatibilidad con Sistemas Operativos                                | El sistema de infraestructura debe ser compatible con sistemas operativos Linux y Windows para la gestión de servidores. | Alta          |
+    | RNF-02  | Accesibilidad desde Cualquier Dispositivo                             | La plataforma debe ser accesible desde cualquier dispositivo con conexión a Internet (navegador web moderno).    | Alta          |
+    | RNF-03  | Seguridad de Datos                                                    | La infraestructura debe garantizar la seguridad de los datos mediante protocolos de encriptación y autenticación. | Alta          |
+    | RNF-04  | Escalabilidad                                                        | La infraestructura debe ser escalable y permitir el incremento de recursos en caso de aumento de usuarios o demanda durante el evento. | Alta          |
+    | RNF-05  | Redundancia y Alta Disponibilidad                                     | La solución debe ofrecer redundancia y alta disponibilidad para los servicios críticos, con un tiempo de inactividad menor al 1%. | Alta          |
+    | RNF-06  | Respaldo y Recuperación ante Fallos                                   | Los servidores y servicios en la nube deben contar con sistemas de respaldo y recuperación ante fallos automáticos. | Alta          |
+    | RNF-07  | Optimización de Recursos en el Sistema                                | La infraestructura debe consumir recursos mínimos de CPU y RAM para optimizar el rendimiento de las aplicaciones y servicios del evento. | Media         |
 
 [3.	REPRESENTACIÓN DE LA ARQUITECTURA DEL SISTEMA](#_Toc52661348)
 
