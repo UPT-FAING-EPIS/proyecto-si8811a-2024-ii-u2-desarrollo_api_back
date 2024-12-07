@@ -307,17 +307,48 @@ El documento está organizado en las siguientes secciones:
 
 
 
-### 4. ATRIBUTOS DE CALIDAD DEL SOFTWARE
 
-| **Escenario**              | **Descripción**                                                                                                                                           | **Prioridad** |
-|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| **Escenario de Funcionalidad** | El sistema debe permitir la ejecución de pruebas de carga para garantizar su estabilidad ante picos de demanda.                                           | Alta          |
-| **Escenario de Usabilidad**    | La plataforma debe ser intuitiva y accesible desde navegadores modernos, permitiendo una navegación fluida para usuarios administrativos y estudiantes.   | Alta          |
-| **Escenario de Confiabilidad** | Debe garantizar un tiempo de inactividad inferior al 1%, asegurando disponibilidad continua mediante redundancia y recuperación automática.              | Alta          |
-| **Escenario de Rendimiento**   | El sistema debe ser capaz de manejar un alto número de conexiones concurrentes sin comprometer el tiempo de respuesta, incluso en momentos críticos.      | Alta          |
-| **Escenario de Mantenibilidad**| La infraestructura debe permitir actualizaciones y ajustes en caliente, minimizando las interrupciones durante los eventos.                              | Alta          |
-| **Otros Escenarios**           | Debe integrarse con los sistemas existentes de la universidad, garantizando la seguridad y el manejo eficiente de datos sensibles de los estudiantes.   | Media         |
+### 4. ATRIBUTOS DE CALIDAD DEL SOFTWARE (TERRAFORM Y AWS)
 
-**Notas:**
-1. Los atributos priorizados permiten centrar los esfuerzos en los aspectos críticos del sistema.
-2. Cada escenario contribuye al éxito del evento y la satisfacción del usuario final.
+#### Escenario de Funcionalidad
+
+| **Escenario**                | **Descripción**                                                                                                                                           | **Prioridad** |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| **Funcionalidad**            | El sistema debe permitir la ejecución de pruebas de carga para garantizar su estabilidad ante picos de demanda.                                           | Alta          |
+| **Implementación**           | Usando **Terraform**, se puede configurar **Auto Scaling Groups** en AWS junto con **Elastic Load Balancing (ELB)** para soportar picos de carga. Las pruebas pueden ser realizadas mediante herramientas como **AWS Fault Injection Simulator** o integradas a un flujo CI/CD con herramientas externas como **JMeter**, permitiendo evaluar el rendimiento bajo demanda. |
+
+#### Escenario de Usabilidad
+
+| **Escenario**                | **Descripción**                                                                                                                                           | **Prioridad** |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| **Usabilidad**               | La plataforma debe ser intuitiva y accesible desde navegadores modernos, permitiendo una navegación fluida para usuarios administrativos y estudiantes.   | Alta          |
+| **Implementación**           | Se emplea **Amazon S3** para hospedar aplicaciones web estáticas, complementado con **CloudFront** para asegurar tiempos de carga rápidos y compatibilidad con navegadores modernos. El acceso seguro puede garantizarse mediante la habilitación de HTTPS con certificados gestionados por **AWS Certificate Manager (ACM)**. |
+
+#### Escenario de Confiabilidad
+
+| **Escenario**                | **Descripción**                                                                                                                                           | **Prioridad** |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| **Confiabilidad**            | Debe garantizar un tiempo de inactividad inferior al 1%, asegurando disponibilidad continua mediante redundancia y recuperación automática.              | Alta          |
+| **Implementación**           | A través del módulo de Terraform para **MongoDB Atlas**, se habilita una configuración Multi-AZ para alta disponibilidad en la base de datos. Además, **AWS Route 53** con políticas de failover y **Amazon S3 Versioning** aseguran redundancia y recuperación rápida de servicios críticos. |
+
+#### Escenario de Rendimiento
+
+| **Escenario**                | **Descripción**                                                                                                                                           | **Prioridad** |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| **Rendimiento**              | El sistema debe ser capaz de manejar un alto número de conexiones concurrentes sin comprometer el tiempo de respuesta, incluso en momentos críticos.      | Alta          |
+| **Implementación**           | Los contenedores backend definidos en el módulo `docker_host` pueden ser ejecutados en **Amazon ECS con Fargate**, habilitando escalabilidad automática. Se configura **Amazon ElastiCache (Redis)** como caché para acelerar las consultas de base de datos y reducir la latencia. Monitoreo de métricas en tiempo real se gestiona con **Grafana**, configurado mediante su módulo dedicado en Terraform. |
+
+#### Escenario de Mantenibilidad
+
+| **Escenario**                | **Descripción**                                                                                                                                           | **Prioridad** |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| **Mantenibilidad**           | La infraestructura debe permitir actualizaciones y ajustes en caliente, minimizando las interrupciones durante los eventos.                              | Alta          |
+| **Implementación**           | Con Terraform, se facilita la implementación de cambios en infraestructura mediante **Zero Downtime Deployments** utilizando **ECS Blue/Green Deployment** para backend y actualizaciones progresivas en los módulos `web_app` y `mobile_app`. Se minimizan interrupciones aplicando configuraciones automáticas a través de **CloudFormation Change Sets**. |
+
+#### Otros Escenarios
+
+| **Escenario**                | **Descripción**                                                                                                                                           | **Prioridad** |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
+| **Integración**              | Debe integrarse con los sistemas existentes de la universidad, garantizando la seguridad y el manejo eficiente de datos sensibles de los estudiantes.   | Media         |
+| **Implementación**           | La integración de bases de datos se realiza a través del módulo `mongodb`, asegurando que los datos sean almacenados en clústeres configurados con cifrado en reposo. El acceso seguro a los servicios se gestiona con **AWS IAM Roles** y políticas estrictas de permisos para cada recurso. Las auditorías de seguridad se facilitan mediante la integración de **AWS Config** y **Grafana** para rastrear el estado de cumplimiento. |
+
