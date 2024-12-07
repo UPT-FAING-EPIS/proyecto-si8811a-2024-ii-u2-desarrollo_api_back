@@ -33,9 +33,9 @@ func TestDockerHostModule(t *testing.T) {
         "api_gateway_name": "my-api-gateway",
         
         // Grafana configurations
-        "grafana_url": os.Getenv("GRAFANA_URL"),
-        "grafana_auth": os.Getenv("GRAFANA_AUTH"),
-        "grafana_cloud_api_key": os.Getenv("GRAFANA_CLOUD_API_KEY"),
+        "grafana_url": "example",
+        "grafana_auth":  "example",
+        "grafana_cloud_api_key":  "example",
         
         // Other configurations
         "ec2_key_name": "test-key",
