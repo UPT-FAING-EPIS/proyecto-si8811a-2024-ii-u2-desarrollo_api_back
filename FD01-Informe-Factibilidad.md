@@ -343,7 +343,7 @@ Soledad Noemi Maltrin Yañez (2011040531)
    
    |Concepto|Costo Total (S/)|
    | :-: | :- |
-   |Costos Generales|3,222.00|
+   |Costos Generales|3,287.59|
    |Costos Operativos durante el Desarrollo|500.00|
    |Costos del Ambiente|384.00|
    |Costos del Personal|6,000.00|
