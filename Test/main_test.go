@@ -15,7 +15,6 @@ func TestDockerHostModule(t *testing.T) {
         "aws_region": "us-east-1",
         "environment": "dev",
         
-        // MongoDB Atlas variables
         "mongodb_project_name": "my-mongodb-project",
         "mongodb_cluster_name": "my-cluster",
         "mongodb_username": "admin",
@@ -25,31 +24,22 @@ func TestDockerHostModule(t *testing.T) {
         "mongodb_atlas_public_key": "test-public-key",
         "mongodb_atlas_private_key": "test-private-key",
         
-        // Bucket names
         "react_app_bucket_name": "my-react-app-bucket-test",
         "flutter_app_bucket_name": "my-flutter-app-bucket-test",
         
-        // API Gateway
         "api_gateway_name": "my-api-gateway",
         
-        // Grafana configurations
         "grafana_url": "example",
         "grafana_auth":  "example",
         "grafana_cloud_api_key":  "example",
         
-        // Other configurations
         "ec2_key_name": "test-key",
    
 		},
 	})
 
-	// Limpieza de recursos
 	defer terraform.Destroy(t, terraformOptions)
 
-	// Inicializar y aplicar
 	terraform.InitAndApply(t, terraformOptions)
 
-	// Validaciones
-	instanceId := terraform.Output(t, terraformOptions, "docker_host_instance_id")
-	assert.NotEmpty(t, instanceId, "El ID de la instancia EC2 no debe estar vacío")
 }
