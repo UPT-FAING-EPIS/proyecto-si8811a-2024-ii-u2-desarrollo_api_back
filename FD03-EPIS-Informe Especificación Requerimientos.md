@@ -333,34 +333,49 @@ Integrantes:
 4. <span id="_Toc52661349" class="anchor"></span>**Especificación de Requerimientos de Software**
 
     4.1 Cuadro de Requerimientos funcionales Inicial
-
-    |  ID   | Descripción                                                                                                     | Prioridad |
-    | :---: | :-------------------------------------------------------------------------------------------------------------- | :-------: |
-    | RF-01 | Monitorear el estado de la infraestructura tecnológica (servidores, red, almacenamiento, etc.) en tiempo real.    |   Alta    |
-    | RF-02 | Configurar y desplegar automáticamente los recursos tecnológicos mediante herramientas de automatización (Terraform). |   Alta    |
-    | RF-03 | Garantizar la disponibilidad y escalabilidad de la infraestructura mediante el uso de servicios en la nube (AWS). |   Alta    |
-    | RF-04 | Implementar un sistema de almacenamiento seguro y escalable para almacenar logs, datos históricos y métricas.    |   Alta    |
-    | RF-05 | Realizar pruebas de carga y rendimiento de la infraestructura para asegurar la capacidad durante el evento.       |   Alta    |
-    | RF-06 | Implementar una red de monitoreo que detecte fallos o problemas en la infraestructura tecnológica y genere alertas. |   Alta    |
-    | RF-07 | Configurar el sistema de infraestructura para que pueda integrarse con otras plataformas de la universidad, como la gestión de eventos y bases de datos de usuarios. |  Media    |
-
+   
+    | **ID**  | **Nombre del Requerimiento**                                           | **Descripción**                                                                                                     | **Prioridad** |
+    |---------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------|
+    | RF-01   | Monitoreo de Infraestructura                                           | Monitorear el estado de la infraestructura tecnológica (servidores, red, almacenamiento, etc.) en tiempo real.    | Alta          |
+    | RF-02   | Despliegue Automático con Terraform                                    | Configurar y desplegar automáticamente los recursos tecnológicos mediante herramientas de automatización (Terraform). | Alta          |
+    | RF-03   | Garantía de Disponibilidad y Escalabilidad en AWS                      | Garantizar la disponibilidad y escalabilidad de la infraestructura mediante el uso de servicios en la nube (AWS). | Alta          |
+    | RF-04   | Pruebas de Carga y Rendimiento                                         | Realizar pruebas de carga y rendimiento de la infraestructura para asegurar la capacidad durante el evento.       | Alta          |
+    | RF-05   | Integración con Plataformas Universitarias                             | Configurar el sistema de infraestructura para que pueda integrarse con otras plataformas de la universidad, como la gestión de eventos y bases de datos de usuarios. | Media         |
+    | RF-06   | Implementación de EC2 con Amazon Linux 2 para Docker                   | Implementación de un EC2 con Amazon Linux 2 para la Ejecución de Contenedores Docker en AWS mediante Terraform.   | Alta          |
+    | RF-07   | Configuración de Instancia de Grafana Cloud                            | Configuración de una Instancia de Grafana Cloud mediante Terraform.                                              | Alta          |
+    | RF-08   | Hospedaje de Aplicación Flutter en S3                                 | Configuración de un Bucket S3 para Hospedar una Aplicación Flutter como Sitio Web Estático.                      | Media         |
+    | RF-09   | Configuración de MongoDB Atlas                                        | Configuración de un Cluster y Usuario de MongoDB Atlas mediante Terraform.                                       | Alta          |
+    | RF-10   | Hospedaje de Aplicación React en S3                                   | Configuración de un Bucket S3 para Hospedar una Aplicación React como Sitio Web Estático.                        | Media         |
+    
 
     4.2 Cuadro de Requerimientos No funcionales
 
-    |  ID   | Descripción                                                                                                     | Prioridad |
-    | :---: | :-------------------------------------------------------------------------------------------------------------- | :-------: |
-    | RNF-01 | El sistema de infraestructura debe ser compatible con sistemas operativos Linux y Windows para la gestión de servidores. |   Alta    |
-    | RNF-02 | La plataforma debe ser accesible desde cualquier dispositivo con conexión a Internet (navegador web moderno).    |   Alta    |
-    | RNF-03 | La infraestructura debe garantizar la seguridad de los datos mediante protocolos de encriptación y autenticación. |   Alta    |
-    | RNF-04 | La infraestructura debe ser escalable y permitir el incremento de recursos en caso de aumento de usuarios o demanda durante el evento. |   Alta    |
-    | RNF-05 | La solución debe ofrecer redundancia y alta disponibilidad para los servicios críticos, con un tiempo de inactividad menor al 1%. |   Alta    |
-    | RNF-06 | Los servidores y servicios en la nube deben contar con sistemas de respaldo y recuperación ante fallos automáticos. |   Alta    |
-    | RNF-07 | La infraestructura debe consumir recursos mínimos de CPU y RAM para optimizar el rendimiento de las aplicaciones y servicios del evento. |  Media    |
-
+    | **ID**  | **Nombre del Requerimiento**                                           | **Descripción**                                                                                                     | **Prioridad** |
+    |---------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------|
+    | RNF-01  | Compatibilidad con Sistemas Operativos                                | El sistema de infraestructura debe ser compatible con sistemas operativos Linux y Windows para la gestión de servidores. | Alta          |
+    | RNF-02  | Accesibilidad desde Cualquier Dispositivo                             | La plataforma debe ser accesible desde cualquier dispositivo con conexión a Internet (navegador web moderno).    | Alta          |
+    | RNF-03  | Seguridad de Datos                                                    | La infraestructura debe garantizar la seguridad de los datos mediante protocolos de encriptación y autenticación. | Alta          |
+    | RNF-04  | Escalabilidad                                                        | La infraestructura debe ser escalable y permitir el incremento de recursos en caso de aumento de usuarios o demanda durante el evento. | Alta          |
+    | RNF-05  | Redundancia y Alta Disponibilidad                                     | La solución debe ofrecer redundancia y alta disponibilidad para los servicios críticos, con un tiempo de inactividad menor al 1%. | Alta          |
+    | RNF-06  | Respaldo y Recuperación ante Fallos                                   | Los servidores y servicios en la nube deben contar con sistemas de respaldo y recuperación ante fallos automáticos. | Alta          |
+    | RNF-07  | Optimización de Recursos en el Sistema                                | La infraestructura debe consumir recursos mínimos de CPU y RAM para optimizar el rendimiento de las aplicaciones y servicios del evento. | Media         |
 
     4.3 Cuadro de Requerimientos funcionales Final
 
+    | **ID**  | **Nombre del Requerimiento**                                           | **Descripción**                                                                                                     | **Prioridad** |
+    |---------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|---------------|
+    | RF-01   | Monitoreo de Infraestructura                                           | Monitorear el estado de la infraestructura tecnológica (servidores, red, almacenamiento, etc.) en tiempo real.    | Alta          |
+    | RF-02   | Despliegue Automático con Terraform                                    | Configurar y desplegar automáticamente los recursos tecnológicos mediante herramientas de automatización (Terraform). | Alta          |
+    | RF-03   | Garantía de Disponibilidad y Escalabilidad en AWS                      | Garantizar la disponibilidad y escalabilidad de la infraestructura mediante el uso de servicios en la nube (AWS). | Alta          |
+    | RF-04   | Pruebas de Carga y Rendimiento                                         | Realizar pruebas de carga y rendimiento de la infraestructura para asegurar la capacidad durante el evento.       | Alta          |
+    | RF-05   | Integración con Plataformas Universitarias                             | Configurar el sistema de infraestructura para que pueda integrarse con otras plataformas de la universidad, como la gestión de eventos y bases de datos de usuarios. | Media         |
+    | RF-06   | Implementación de EC2 con Amazon Linux 2 para Docker                   | Implementación de un EC2 con Amazon Linux 2 para la Ejecución de Contenedores Docker en AWS mediante Terraform.   | Alta          |
+    | RF-07   | Configuración de Instancia de Grafana Cloud                            | Configuración de una Instancia de Grafana Cloud mediante Terraform.                                              | Alta          |
+    | RF-08   | Hospedaje de Aplicación Flutter en S3                                 | Configuración de un Bucket S3 para Hospedar una Aplicación Flutter como Sitio Web Estático.                      | Media         |
+    | RF-09   | Configuración de MongoDB Atlas                                        | Configuración de un Cluster y Usuario de MongoDB Atlas mediante Terraform.                                       | Alta          |
+    | RF-10   | Hospedaje de Aplicación React en S3                                   | Configuración de un Bucket S3 para Hospedar una Aplicación React como Sitio Web Estático.                        | Media         |
     
+
 
     4.4 Reglas de Negocio
 
@@ -428,137 +443,210 @@ Integrantes:
     - Utiliza la plataforma para gestionar la inscripción y participación de los estudiantes.
     - Supervisa la logística y las actividades del evento a través de la plataforma.
 
-    ---
+    
+5.2 Modelo Conceptual
+
+- **a)** Diagrama de Paquetes
+
+![paquete](./media/diagrama_paquete.png)
+
+![paquete](./media/diagrama_paquete1.png)
+   
+- **b)** Diagrama de Casos de Uso
+
+![caso](./media/diagrama_caso_uso.png)
 
 
-    5.2	Modelo Conceptual
-
-    - **a)** Diagrama de Paquetes
-
-    ![paquete](./media/diagrama_paquete.png)
-
-    - **b)** Diagrama de Casos de Uso
-
-    ![caso](./media/diagrama_caso_uso.png)
-
-    - **c)** Escenarios de Caso de Uso (narrativa)
-
-    ---
-
-    **Caso de Uso: Coordinar Logística del Evento (CU01)**
-
-    **Actores:** Administrador, Bienestar Universitario  
-    **Descripción:** Permitir a los actores coordinar y gestionar todos los aspectos logísticos del evento, como la programación de actividades y la gestión de inscripciones.  
-    **Precondiciones:** El evento debe estar en proceso de organización y los actores deben tener acceso al sistema de gestión.
-
-    | **Caso de Uso**  | Coordinar Logística del Evento (CU01)                                                                                       |
-    |-------------------|----------------------------------------------------------------------------------------------------------------------------|
-    | **Actores**       | Administrador, Bienestar Universitario                                                                                     |
-    | **Descripción**   | Gestionar y coordinar todos los aspectos logísticos del evento, asegurando que las actividades programadas se realicen de manera efectiva. |
-    | **Precondiciones**| El evento debe estar en proceso de organización y los actores deben contar con credenciales para acceder al sistema.       |
-    | **Flujo Normal**  |                                                                                                                            |
-    | **Acción del Actor**                                             | **Curso del Sistema**                                                                                   |
-    | 1. Inicia sesión en el sistema de gestión del evento.              | 2. Accede al panel de control de la logística del evento.                                                |
-    | 3. Revisa y actualiza el calendario de actividades.               | 4. Muestra las actividades programadas, incluyendo la duración y los recursos necesarios.               |
-    | 5. Coordina la asignación de recursos y espacios.                 | 6. Actualiza la plataforma con cambios logísticos según sea necesario.                                  |
-
-    ---
-
-    **Caso de Uso: Participar en el Evento (CU02)**
-
-    **Actores:** Estudiante  
-    **Descripción:** Permitir al estudiante registrarse e interactuar con los recursos proporcionados para participar en el evento.  
-    **Precondiciones:** El evento debe estar abierto para la inscripción y el estudiante debe estar registrado en la plataforma.
-
-    | **Caso de Uso**  | Participar en el Evento (CU02)                                                                                              |
-    |-------------------|----------------------------------------------------------------------------------------------------------------------------|
-    | **Actores**       | Estudiante                                                                                                                |
-    | **Descripción**   | Permitir al estudiante registrarse y participar activamente en las actividades del evento.                                 |
-    | **Precondiciones**| El estudiante debe estar registrado en la plataforma y tener acceso a los recursos proporcionados.                         |
-    | **Flujo Normal**  |                                                                                                                            |
-    | **Acción del Actor**                                             | **Curso del Sistema**                                                                                   |
-    | 1. Accede a la plataforma de inscripción del evento.              | 2. Completa su registro y recibe confirmación.                                                            |
-    | 3. Participa en las actividades programadas.                      | 4. Visualiza los recursos disponibles y accede a las conferencias o materiales.                          |
-    | 5. Asiste a las sesiones o actividades programadas.               | 6. Interactúa con otros participantes y los recursos del evento.                                         |
-
-    ---
-
-    **Caso de Uso: Supervisar el Evento (CU03)**
-
-    **Actores:** Bienestar Universitario  
-    **Descripción:** Permitir a Bienestar Universitario supervisar el evento, asegurando que las actividades se desarrollen según lo planeado y que la participación estudiantil sea adecuada.  
-    **Precondiciones:** El evento debe estar en marcha y Bienestar Universitario debe tener acceso a las métricas y registros del evento.
-
-    | **Caso de Uso**  | Supervisar el Evento (CU03)                                                                                               |
-    |-------------------|----------------------------------------------------------------------------------------------------------------------------|
-    | **Actores**       | Bienestar Universitario                                                                                                   |
-    | **Descripción**   | Supervisar y gestionar el evento en tiempo real, asegurando que todo el desarrollo del evento se realice sin inconvenientes.|
-    | **Precondiciones**| El evento debe estar en curso y Bienestar Universitario debe tener acceso al sistema.                                      |
-    | **Flujo Normal**  |                                                                                                                            |
-    | **Acción del Actor**                                             | **Curso del Sistema**                                                                                   |
-    | 1. Inicia sesión en el sistema de supervisión del evento.          | 2. Visualiza el estado general del evento, incluyendo la participación de los estudiantes.               |
-    | 3. Revisa las métricas de actividad y asistencia.                 | 4. Ajusta los aspectos logísticos si es necesario.                                                        |
-    | 5. Realiza ajustes o intervenciones durante el evento.            | 6. Asegura la correcta ejecución de las actividades.                                                     |
+- **c)** Escenarios de Caso de Uso (narrativa)
 
 
-    5.3	Modelo Logico
+---
 
-    - **a)** Análisis de Objetos
+### Caso de Uso 1: **Monitoreo de Infraestructura**
 
-    **Entidades**
-        
-    ![entidad](./media/entidades.png)
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Accede al panel de monitoreo de la infraestructura.                    | El sistema muestra el estado general de la infraestructura (servidores, red, etc.). |
+| 2        | Bienestar Universitario| Solicita información sobre el estado de los recursos para coordinar eventos. | El sistema proporciona información detallada sobre los recursos disponibles.     |
+| 3        | Administrador          | Selecciona un servidor o recurso para monitorear.                      | El sistema muestra detalles específicos de ese recurso, como uso de CPU, RAM, etc. |
+| 4        | Administrador          | Revisa los gráficos de uso en tiempo real.                             | El sistema actualiza los gráficos mostrando el rendimiento y posibles alertas.    |
+| 5        | Administrador          | Toma decisiones sobre si escalar o realizar mantenimiento.            | El sistema ofrece recomendaciones para mejorar el rendimiento o escalar los recursos. |
 
-    **Frontera**
-        
-    ![frontera](./media/frontera.png)
+---
 
-    **Control**
-        
-    ![entidad](./media/control.png)
+### Caso de Uso 2: **Despliegue Automático con Terraform**
 
-    - **b)** Diagrama de Actividades con Objetos
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Inicia el despliegue con Terraform.                                    | El sistema ejecuta el script de Terraform y comienza a provisionar los recursos.   |
+| 2        | Administrador          | Confirma si desea proceder con la configuración.                       | El sistema procede con la ejecución del plan de Terraform y muestra el progreso.   |
+| 3        | Estudiante             | Verifica que la infraestructura esté lista para realizar las actividades del evento. | El sistema muestra el estado final de la infraestructura para su uso.             |
+| 4        | Administrador          | Valida la creación de los recursos.                                    | El sistema confirma que todos los recursos fueron creados correctamente.          |
 
-    **Diagrama de actividades: Monitorear estado de red (CU01)**
+---
 
-     ![CU01](./media/cu1.png)
+### Caso de Uso 3: **Garantía de Disponibilidad y Escalabilidad en AWS**
 
-     **Diagrama de actividades: Generar Reportes de Uso (CU02)**
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Revisa el estado de los recursos en AWS.                               | El sistema muestra el estado actual de todos los recursos y su capacidad de escalabilidad. |
+| 2        | Bienestar Universitario| Solicita que se aumenten los recursos para eventos adicionales.        | El sistema aplica los cambios para aumentar la capacidad de la infraestructura.    |
+| 3        | Administrador          | Configura el escalado automático para los recursos.                    | El sistema confirma la configuración del escalado automático en AWS.              |
+| 4        | Administrador          | Monitorea el comportamiento de los recursos después del escalado.     | El sistema ajusta la infraestructura automáticamente y muestra el progreso.       |
+
+---
+
+### Caso de Uso 4: **Pruebas de Carga y Rendimiento**
+
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Configura los parámetros para la prueba de carga.                      | El sistema recibe los parámetros y comienza la ejecución de las pruebas de carga. |
+| 2        | Estudiante             | Participa en las pruebas de carga accediendo a los recursos.           | El sistema simula una alta demanda de tráfico y ajusta la infraestructura.        |
+| 3        | Administrador          | Observa los resultados de la prueba.                                   | El sistema genera un informe con las métricas de rendimiento y posibles cuellos de botella. |
+| 4        | Administrador          | Ajusta la infraestructura según los resultados de la prueba.           | El sistema realiza ajustes automáticamente según las recomendaciones.            |
+
+---
+
+### Caso de Uso 5: **Integración con Plataformas Universitarias**
+
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Bienestar Universitario| Accede a la plataforma para gestionar la inscripción de estudiantes.   | El sistema muestra la lista de estudiantes registrados y actividades disponibles. |
+| 2        | Estudiante             | Registra su participación en el evento.                                | El sistema confirma la inscripción del estudiante.                                |
+| 3        | Administrador          | Verifica que la sincronización de datos con la plataforma universitaria se haya realizado. | El sistema confirma la integración exitosa de la información.                     |
+| 4        | Bienestar Universitario| Supervisa las actividades del evento y el progreso de la participación. | El sistema muestra el estado en tiempo real de las actividades y la participación. |
+
+---
+
+### Caso de Uso 6: **Implementación de EC2 con Amazon Linux 2 para Docker**
+
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Crea una instancia EC2 con Amazon Linux 2.                             | El sistema provisiona la instancia en AWS.                                        |
+| 2        | Estudiante             | Accede a la aplicación desplegada en el contenedor Docker.             | El sistema confirma que la aplicación está disponible y operativa.               |
+| 3        | Administrador          | Instala Docker en la instancia EC2.                                    | El sistema instala Docker correctamente en la instancia.                          |
+| 4        | Administrador          | Configura y valida el contenedor Docker con las aplicaciones.          | El sistema valida que el contenedor esté configurado correctamente.              |
+
+---
+
+### Caso de Uso 7: **Configuración de Instancia de Grafana Cloud**
+
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Crea una cuenta en Grafana Cloud y configura la instancia.             | El sistema crea la instancia y genera los datos de acceso.                        |
+| 2        | Administrador          | Configura los servicios y paneles para monitorear.                     | El sistema configura las fuentes de datos y los paneles en Grafana.              |
+| 3        | Estudiante             | Accede a los paneles de monitoreo para ver los resultados del evento.  | El sistema muestra los paneles con las métricas relevantes del evento.           |
+| 4        | Administrador          | Valida que los datos sean correctos en los paneles.                    | El sistema confirma que los datos mostrados son correctos y actualizados.        |
+
+---
+
+### Caso de Uso 8: **Hospedaje de Aplicación Flutter en S3**
+
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Carga los archivos de la aplicación Flutter a S3.                      | El sistema sube los archivos al bucket de S3.                                     |
+| 2        | Estudiante             | Accede a la aplicación Flutter a través de la URL pública.             | El sistema muestra la aplicación Flutter de manera funcional.                    |
+| 3        | Administrador          | Configura el bucket S3 para servir como sitio web.                     | El sistema configura el bucket para el hospedaje web y muestra la URL.           |
+| 4        | Administrador          | Verifica que la aplicación esté funcionando correctamente.             | El sistema confirma que la aplicación está accesible sin errores.                |
+
+---
+
+### Caso de Uso 9: **Configuración de MongoDB Atlas**
+
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Crea un cluster en MongoDB Atlas.                                      | El sistema provisiona el cluster en MongoDB Atlas.                                |
+| 2        | Estudiante             | Accede a los datos almacenados en el cluster para las actividades.     | El sistema confirma la conexión y acceso a los datos del cluster.                |
+| 3        | Administrador          | Configura los permisos para los usuarios del cluster.                 | El sistema valida y aplica los permisos correctamente.                            |
+| 4        | Administrador          | Verifica la conectividad y el estado del cluster.                      | El sistema proporciona información sobre el estado del cluster y métricas.       |
+
+---
+
+### Caso de Uso 10: **Hospedaje de Aplicación React en S3**
+
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Carga los archivos de la aplicación React a S3.                        | El sistema sube los archivos del proyecto React al bucket de S3.                 |
+| 2        | Estudiante             | Accede a la aplicación React desde la URL proporcionada.               | El sistema muestra la aplicación React de forma funcional en el navegador.       |
+| 3        | Administrador          | Configura el bucket de S3 para servir la aplicación como sitio web.    | El sistema configura el bucket como un sitio web estático.                       |
+| 4        | Administrador          | Verifica que la aplicación esté funcionando correctamente.             | El sistema confirma que la aplicación React se muestra sin errores.              |
+
+--- 
+
+
+
+5.3 Modelo Lógico
+    
+- **a)** Análisis de Objetos
+    
+    
+**Entidades**
+    
+    
+![entidad](./media/entidades.png)
+    
+    
+**Frontera**
+    
+    
+![frontera](./media/frontera.png)
+    
+    
+ **Control**
+    
+    
+![control](./media/control.png)
+    
+    
+    
+- **c)** Diagrama de Secuencia
+    
+    **Diagrama de secuencia: Monitoreo de Infraestructura (CU01)**
+    
+    ![sec_CU01](./media/secu_cu1.png)
+
+    **Diagrama de secuencia: Despliegue Automático con Terraform (CU02)**
+    
+    ![sec_CU02](./media/secu_cu2.png)
+
+    **Diagrama de secuencia: Garantía de Disponibilidad y Escalabilidad en AWS (CU03)**
+    
+    ![sec_CU03](./media/secu_cu3.png)
+
+    **Diagrama de secuencia: Pruebas de Carga y Rendimiento (CU04)**
+    
+    ![sec_CU04](./media/secu_cu4.png)
   
-     ![CU02](./media/cu2.png)
+    **Diagrama de secuencia: Integración con Plataformas Universitarias (CU05)**
+    
+    ![sec_CU05](./media/secu_cu5.png)
 
-     **Diagrama de actividades: Configurar Dashboard (CU03)**
-  
-     ![CU03](./media/cu3.png)
+    **Diagrama de secuencia: Implementación de EC2 con Amazon Linux 2 para Docker (CU06)**
+    
+    ![sec_CU06](./media/secu_cu6.png)
 
-     **Diagrama de actividades: Exportar Datos (CU04)**
-     
-     ![CU04](./media/cu4.png)
+    **Diagrama de secuencia: Configuración de Instancia de Grafana Cloud (CU07)**
+    
+    ![sec_CU07](./media/secu_cu7.png)
 
-    - **c)** Diagrama de Secuencia
+    **Diagrama de secuencia: Hospedaje de Aplicación Flutter en S3 (CU08)**
+    
+    ![sec_CU08](./media/secu_cu8.png)
 
-    **Diagrama de secuencia: Monitorear estado de red (CU01)**
-  
-     ![sec_CU04](./media/secu_cu1.png)
-  
-     **Diagrama de secuencia: Generar Reportes de Uso (CU02)**
-  
-     ![sec_CU04](./media/secu_cu2.png)
-     
-     **Diagrama de secuencia: Configurar Dashboard (CU03)**
-  
-     ![sec_CU04](./media/secu_cu3.png)
-     
-     **Diagrama de secuencia: Exportar Datos (CU04)**
+    **Diagrama de secuencia: Configuración de MongoDB Atlas (CU09)**
+    
+    ![sec_CU09](./media/secu_cu9.png)
 
-     ![sec_CU04](./media/secu_cu4.png)
+    **Diagrama de secuencia: Hospedaje de Aplicación React en S3 (CU10)**
+    
+    ![sec_CU10](./media/secu_cu10.png)
+  
 
     - **d)** Diagrama de Clases
     
     ![diagram_clase](./media/diagrama_clase.png)
 
 
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 
 <span id="_Toc52661355" class="anchor"></span>**CONCLUSIONES**
