@@ -54,19 +54,19 @@ provider "grafana" {
 
 
 
-module "grafana" {
-  source = "./modules/grafana"
+#module "grafana" {
+#  source = "./modules/grafana"
   
-  providers = {
-    grafana = grafana.stack
-  }
+#  providers = {
+#    grafana = grafana.stack
+#  }
 
-  mongodb_username      = var.mongodb_username
-  mongodb_password      = var.mongodb_password
-  mongodb_cluster_name  = var.mongodb_cluster_name
-  mongodb_database_name = var.mongodb_database_name
-  mongodb_conection_1   = "mongodb+srv://admin:securepassword@my-cluster.t3laz.mongodb.net/?retryWrites=true&w=majority&appName=my-cluster"
-}
+#  mongodb_username      = var.mongodb_username
+#  mongodb_password      = var.mongodb_password
+#  mongodb_cluster_name  = var.mongodb_cluster_name
+#  mongodb_database_name = var.mongodb_database_name
+#  mongodb_conection_1   = "mongodb+srv://admin:securepassword@my-cluster.t3laz.mongodb.net/?retryWrites=true&w=majority&appName=my-cluster"
+#}
 
 
 # module "web_app" {
