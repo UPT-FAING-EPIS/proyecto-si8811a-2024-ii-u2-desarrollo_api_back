@@ -22,6 +22,10 @@ Apaza Ccalle, Albert Kenyi   (2021071075)
  
 Huallpa Maron, Jesus Antonio (2021071085) 
 
+
+Helbert Andres Condori Loayza (2020067571)
+
+
 **Tacna – Perú**
 
 2024
