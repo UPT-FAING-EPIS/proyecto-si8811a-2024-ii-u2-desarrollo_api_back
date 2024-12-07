@@ -16,7 +16,7 @@ data "aws_ami" "debian" {
 resource "aws_instance" "docker_host" {
   ami           = data.aws_ami.debian.id
   instance_type = "t2.micro"
-  key_name      = "intentoterraform"
+  key_name      = "vockey"
 
   user_data = <<-EOF
               #!/bin/bash
