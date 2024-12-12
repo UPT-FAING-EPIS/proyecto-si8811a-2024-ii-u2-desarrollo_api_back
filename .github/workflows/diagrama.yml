@@ -1,4 +1,4 @@
-opname: Generate Infrastructure Diagram
+name: Generate Infrastructure Diagram
 
 on:
   push:
