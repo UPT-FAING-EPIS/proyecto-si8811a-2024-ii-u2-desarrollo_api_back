@@ -3,7 +3,7 @@ name: Generate Infrastructure Diagram
 on:
   push:
     branches:
-      - DesarrolloApiBack
+      - develop
 
 jobs:
   generate-diagram:
